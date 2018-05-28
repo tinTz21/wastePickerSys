@@ -34,4 +34,10 @@ class HomeController extends Controller
     {
         return view('pages.callpicker');
     }
+
+    public function edit($id)
+    {
+        $edit=User::findOrFail($id);
+        return view('pages.edit')->withEdit($edit);
+    }
 }

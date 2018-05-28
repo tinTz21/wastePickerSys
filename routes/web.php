@@ -1,5 +1,6 @@
 <?php
-
+use Illuminate\Support\Facades\Input;
+use App\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,17 @@ Route::prefix('admin')->group(function(){
 	Route::post('/login','Auth\AdminLoginController@login')->name('adminlogin');
 	Route::get('/','AdminController@index')->name('admin');
 });
+
+Route::post('/search',function(){
+	$q = Input::get('q');
+	if($q != ""){
+		$user = User::where('name', 'LIKE', '%' . $q . '%')
+		->orWhere('address', 'LIKE', '%' . $q . '%')
+		->get();
+	if(count($user) > 0)
+		return view('pages.callpicker')->withDetails($user)->withQuery($q);
+	}
+	return view('pages.callpicker')->withMessage("No users found!");
+});
+
+Route::get('pages/{$id}/edit','HomeController@edit')->name('edit');

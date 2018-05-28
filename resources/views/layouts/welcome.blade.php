@@ -40,7 +40,7 @@
                         <li><a href="{{ route('welcome') }}">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="{{ route('callpicker') }}">CallPicker</a></li>
-                        <li><a href="{{ route('login') }}">WastePicker</a></li>
+                        <li><a href="{{ route('admin') }}">Admin</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -81,7 +81,7 @@
         </nav>
         <div class="container-fluid img-responsive" style="height: 500px; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('../images/background.jpg');">
     @yield('content')
-                </div>
+        </div>
 
         
     </div>

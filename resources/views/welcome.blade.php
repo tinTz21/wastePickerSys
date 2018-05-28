@@ -5,21 +5,7 @@
     <div class="row">
         <div class="col-md-12">
 
-        <h2 style="text-align: center; padding: 200px 200px; font-size: 40px; color: #fff;">Welcome to wastePicker system...</h2>
-            <!-- <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    This is welcome page
-                </div>
-            </div> -->
-            
+        <h2 style="text-align: center; padding: 200px 200px; font-size: 40px; color: #fff;">Welcome to wastePicker system...</h2>   
         </div>
     </div>
 </div>

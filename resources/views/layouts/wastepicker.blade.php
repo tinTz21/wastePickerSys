@@ -50,7 +50,7 @@
                         <li><a href="{{ route('welcome') }}">Home</a></li>
                         <li><a href="{{ route('welcome') }}">About</a></li>
                         <li><a href="{{ route('callpicker') }}">CallPicker</a></li>
-                        <li><a href="{{ route('login') }}">WastePicker</a></li>
+                        <li><a href="{{ route('admin') }}">Admin</a></li>
                     </ul>
                          
                             <li class="dropdown">

@@ -78,8 +78,8 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-           @yield('content')  
+        <div class="container-fluid img-responsive" style="height: 500px; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: url('../images/background1.jpg');">
+    @yield('content')
         </div>
       
     </div>
